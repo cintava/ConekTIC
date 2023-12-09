@@ -1,0 +1,286 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: open sans,sans-serif;
+    color: #000000;
+    background-color: #f9fdff;
+}
+h1,h4{
+    font-family: raleway,sans-serif;
+    font-weight: 600;
+}
+// incio header
+#barra-navegacion{
+    .navbar {
+        // background-color: rgba(32, 39, 40, 0.04);
+        background-color: rgb(10, 61, 51, 0.03);
+        .logo img{
+            width:  200px; 
+        }
+        .nav-link,
+        .nav-link.active {
+        // color: #00425A;
+        color: #000000;
+        font-weight: 500;
+        }
+        .nav-link:hover,
+        .nav-link.active:hover {
+        color: #0085b6 ;
+        }
+        .navbar-toggler{
+            &:focus{
+                box-shadow: 0 0 5px 0rem rgba(0, 68, 92, 0.402);      
+            }
+            border: 0;
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 66, 90)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }   
+        }
+        .navbar-collapse{
+            text-align: center;
+        }    
+    }
+}
+// termina header
+// inicio main
+#imagen-portada{
+    .img-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            height: auto;
+            filter: blur(1.2px);
+            border-radius: 5px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 48, 65, 0.511);
+            border-radius: 4px;
+        }
+        h1 {
+            position: absolute;
+            color: white; 
+            font-size: 40px;
+            text-align: center;  
+            text-shadow: 0px 0px 16px rgba(0,0,0,0.96); 
+            .text-tamanio{
+                font-size: 60px;
+            }
+        }      
+    } 
+}
+// termina main
+// inicio quienes somos
+#nosotros {
+    .container {
+        .content-quienessomos{
+            padding: 8vw; ;
+        }
+        p{
+            font-size: 20px;
+        }
+        span{
+            font-weight: 600;
+            color: #00729b;
+            
+        }
+        h4 {
+            color: #00729b;
+            display: inline-block;  
+            position: relative;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 3px;
+                bottom: -210px;
+                left: calc(50% - 40px);
+                // background-color: currentColor;
+                background-color: #00729b3f;
+                border-radius: 5px;
+            }
+        }
+    }
+    // @media (max-width: 992px) {
+    //     .contenido-quienessomos{
+    //         text-align: center;
+    //         img {
+    //             width: 90%;
+    //         }
+    //     }
+        
+    // } 
+}
+// termina quienes somos
+// inicio que-ofrecemos
+#porque-elegirnos{
+    .container{
+        background-color: rgb(10, 61, 51, 0.03);
+        padding: 3vw;
+        border-radius:4px;
+        h4 {
+            color: #00729b;
+            text-transform: uppercase;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 3px;
+                bottom: -30px;
+                left: 0;
+                // left: calc(50% - 40px);
+                // background-color: currentColor;
+                background-color: #00729b3f;
+                border-radius: 5px;
+            }
+        }
+        span{
+            font-weight: 600;
+            color: #00729b;
+        }
+        .img-xqelegirnos {
+            position: relative;
+            img{
+                height:auto;
+                width:100%;
+                border-radius:4px;
+                filter: blur(1px);
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 48, 65, 0.354);
+                border-radius: 4px;
+            }
+        }     
+    }
+     @media (max-width: 992px) {
+        p{
+            padding-bottom: 40px;
+        }
+        .img-xqelegirnos {
+            text-align: center;
+            img {
+                width: 90%;
+            }
+        }  
+    } 
+}
+// termina que-ofrecemos
+// inicio propuesta
+#propuesta{
+    padding: 80px 0px 150px 0px;
+    .card-group{
+        .card {
+            box-shadow: 0 0 10px rgba(0, 67, 92, 0.6);
+            overflow: hidden;
+            p{
+                color: #00425A;
+                font-weight: 600;
+            }
+            img{
+                opacity: 0.8;
+                filter: blur(1px);
+                transition: all 1s ease;
+                &:hover{   
+                    transform:scale(1.1);
+                }
+            }        
+        }
+    }
+    @media (max-width: 992px) {
+        .card-group {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 15vw;
+            .card {
+                margin-bottom: 20px;
+            }
+        } 
+    }    
+}
+// termina propuesta
+// inicio formulario
+#contacto {
+    // color: #0A3D33;
+    padding-top: 9vh;
+    padding-bottom: 8vh;
+    background-color: rgb(10, 61, 51, 0.03);
+    .container{
+        .logo img{
+        width:  300px;
+        margin-bottom: 5vh;   
+        }
+        label {
+        color: #00425A ;
+        font-weight: 600;
+        }
+        .form-control{
+            border-radius: 20px;     
+        }
+        input:not(textarea) {
+            height: 40px;
+        }
+        .boton {
+            padding-top: 20px;
+            button.btn {
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                background-color: #00425A;
+                border-radius: 20px;  
+                transition: all 1s ease;
+                &:hover{   
+                    transform:scale(1.1);
+                }  
+            }
+        }  
+    }    
+}
+// termina formulario
+// inicio footer
+#footer{
+    background-color:#1f2627;
+    .footer-contenedor{
+        color: #e4e4e4;
+        padding-top: 100px;
+        padding-bottom: 100px;
+     }
+    .redessociales {
+        margin-top: 50px;
+        ul{
+            padding-left: 0px;
+            padding-right: 8px;
+            li {
+                display: inline-block;
+                margin-left: 10px; 
+                i {
+                    font-size: 30px;
+                }   
+            }
+        }
+    }
+    .logo-footer{    
+        width:  100px;
+        margin-bottom: 16px;  
+    }
+}
+// termina footer
