@@ -11935,26 +11935,25 @@ h1, .h1, h4, .h4 {
 #nosotros .container .content-quienessomos {
   padding: 7vw;
 }
-#nosotros .container p {
+#nosotros .container .content-quienessomos p {
   font-size: clamp(1rem, 2vw, 1.13rem);
 }
-#nosotros .container span {
+#nosotros .container .content-quienessomos span {
   font-weight: 600;
   color: #00729b;
 }
-#nosotros .container h4, #nosotros .container .h4 {
+#nosotros .container .content-quienessomos h4, #nosotros .container .content-quienessomos .h4 {
   color: #00729b;
   display: inline-block;
   position: relative;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-#nosotros .container h4::after, #nosotros .container .h4::after {
+#nosotros .container .content-quienessomos::after {
   content: "";
   position: absolute;
   width: 80px;
   height: 3px;
-  bottom: -210px;
   left: calc(50% - 40px);
   background-color: rgba(0, 114, 155, 0.2470588235);
   border-radius: 5px;
@@ -11965,29 +11964,28 @@ h1, .h1, h4, .h4 {
   padding: 5vw;
   border-radius: 4px;
 }
-#porque-elegirnos .container h4, #porque-elegirnos .container .h4 {
+#porque-elegirnos .container .text-xqelegirnos h4, #porque-elegirnos .container .text-xqelegirnos .h4 {
   color: #00729b;
   text-transform: uppercase;
 }
-#porque-elegirnos .container h4::after, #porque-elegirnos .container .h4::after {
+#porque-elegirnos .container .text-xqelegirnos p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+#porque-elegirnos .container .text-xqelegirnos span {
+  font-weight: 600;
+  color: #00729b;
+}
+#porque-elegirnos .container .text-xqelegirnos::after {
   content: "";
   position: absolute;
   width: 80px;
   height: 3px;
-  bottom: -30px;
-  left: 0;
   background-color: rgba(0, 114, 155, 0.2470588235);
   border-radius: 5px;
 }
-#porque-elegirnos .container p {
-  font-size: clamp(0.9rem, 2vw, 1rem);
-}
-#porque-elegirnos .container span {
-  font-weight: 600;
-  color: #00729b;
-}
 #porque-elegirnos .container .img-xqelegirnos {
   position: relative;
+  padding-top: 25px;
 }
 #porque-elegirnos .container .img-xqelegirnos img {
   height: auto;
@@ -12006,7 +12004,7 @@ h1, .h1, h4, .h4 {
 }
 @media (max-width: 992px) {
   #porque-elegirnos p {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   #porque-elegirnos .img-xqelegirnos {
     text-align: center;
