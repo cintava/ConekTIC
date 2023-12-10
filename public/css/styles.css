@@ -11924,19 +11924,19 @@ h1, .h1, h4, .h4 {
 #imagen-portada .img-container h1, #imagen-portada .img-container .h1 {
   position: absolute;
   color: white;
-  font-size: 40px;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
   text-align: center;
-  text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.96);
+  text-shadow: 0px 0px 16px rgb(0, 0, 0);
 }
-#imagen-portada .img-container h1 .text-tamanio, #imagen-portada .img-container .h1 .text-tamanio {
-  font-size: 60px;
+#imagen-portada .img-container h1 .tit-size, #imagen-portada .img-container .h1 .tit-size {
+  font-size: clamp(1.9rem, 3vw, 3.8rem);
 }
 
 #nosotros .container .content-quienessomos {
-  padding: 8vw;
+  padding: 7vw;
 }
 #nosotros .container p {
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 1.13rem);
 }
 #nosotros .container span {
   font-weight: 600;
@@ -11962,7 +11962,7 @@ h1, .h1, h4, .h4 {
 
 #porque-elegirnos .container {
   background-color: rgba(10, 61, 51, 0.03);
-  padding: 3vw;
+  padding: 5vw;
   border-radius: 4px;
 }
 #porque-elegirnos .container h4, #porque-elegirnos .container .h4 {
@@ -11978,6 +11978,9 @@ h1, .h1, h4, .h4 {
   left: 0;
   background-color: rgba(0, 114, 155, 0.2470588235);
   border-radius: 5px;
+}
+#porque-elegirnos .container p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 #porque-elegirnos .container span {
   font-weight: 600;
