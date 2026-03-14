@@ -32,14 +32,6 @@ ConekTIC/
 └── README.md
 ```
 
-## Instalación local
-
-```bash
-git clone https://github.com/cintava/ConekTIC.git
-cd ConekTIC
-npm install
-```
-
 ## Características
 
 - Diseño responsive adaptado a distintos dispositivos
